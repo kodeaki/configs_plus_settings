@@ -1,0 +1,4 @@
+
+// Changing task switcher box pop up delay
+kwriteconfig5 --file ~/.config/kwinrc --group TabBox --key DelayTime 300
+qdbus org.kde.KWin /KWin reconfigure
