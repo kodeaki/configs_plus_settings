@@ -108,7 +108,7 @@ config.keys = {
 	{ key = "L", mods = "CTRL", action = act.ShowDebugOverlay },
 	{
 		key = "O",
-		mods = "CTRL|ALT",
+		mods = "CTRL|SHIFT|ALT",
 		-- toggling opacity
 		action = wezterm.action_callback(function(window, _)
 			local overrides = window:get_config_overrides() or {}
