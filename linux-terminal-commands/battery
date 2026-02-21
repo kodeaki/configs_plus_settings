@@ -1,0 +1,13 @@
+
+# changes battery charge limit on Lenovo y530
+{
+	Inside of directory "/sys/class/power_supply/BAT0/"
+
+	For charging limit set to 60% run this command
+		echo "Long_Life" | sudo tee /sys/class/power_supply/BAT0/charge_types
+
+	Reset to standard 100% limit run this command
+		echo "Standard" | sudo tee /sys/class/power_supply/BAT0/charge_types
+}
+
+
